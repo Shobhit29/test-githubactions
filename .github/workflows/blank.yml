@@ -36,6 +36,7 @@ jobs:
           echo test, and deploy your project.
   build-docker:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: create docker Image
         run: echo create Docker Image
